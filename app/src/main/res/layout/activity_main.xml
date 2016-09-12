@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.tourguide.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#455A64"
+        android:textStyle="bold"
+        android:text="@string/intro" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
+
+                    <ImageButton
+                        android:id="@+id/icon_res"
+                        android:layout_width="@dimen/icon_width_height"
+                        android:layout_height="@dimen/icon_width_height"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="8dp"
+                        android:background="#fff3f3f3"
+                        android:src="@drawable/restaurant_icon" />
+
+                    <TextView
+                        android:id="@+id/restaurant"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:textSize="@dimen/title_size"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/text_margin"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/tile_bottom_margin"
+                        android:text="@string/restaurants" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_view_height"
+                    android:textSize="@dimen/title_size"
+                    android:padding="@dimen/text_margin"
+                    android:layout_marginBottom="@dimen/tile_bottom_margin"
+                    android:text="@string/restaurants" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_view_height"
+                    android:textSize="@dimen/title_size"
+                    android:padding="@dimen/text_margin"
+                    android:layout_marginBottom="@dimen/tile_bottom_margin"
+                    android:text="@string/hotels" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_view_height"
+                    android:textSize="@dimen/title_size"
+                    android:padding="@dimen/text_margin"
+                    android:text="@string/attractions" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+</RelativeLayout>
