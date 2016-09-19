@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="12sp"
+        android:textSize="16sp"
         android:textColor="#455A64"
         android:textStyle="bold"
         android:text="@string/intro" />
@@ -56,28 +56,36 @@
 
                 </LinearLayout>
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/text_view_height"
-                    android:textSize="@dimen/title_size"
-                    android:padding="@dimen/text_margin"
-                    android:layout_marginBottom="@dimen/tile_bottom_margin"
-                    android:text="@string/restaurants" />
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/text_view_height"
-                    android:textSize="@dimen/title_size"
-                    android:padding="@dimen/text_margin"
-                    android:layout_marginBottom="@dimen/tile_bottom_margin"
-                    android:text="@string/hotels" />
+                    <ImageButton
+                        android:id="@+id/icon_hotel"
+                        android:layout_width="@dimen/icon_width_height"
+                        android:layout_height="@dimen/icon_width_height"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="8dp"
+                        android:background="#fff3f3f3"
+                        android:src="@drawable/hotel_icon" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/text_view_height"
-                    android:textSize="@dimen/title_size"
-                    android:padding="@dimen/text_margin"
-                    android:text="@string/attractions" />
+                    <TextView
+                        android:id="@+id/hotel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height"
+                        android:textSize="@dimen/title_size"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/text_margin"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/tile_bottom_margin"
+                        android:text="@string/hotels" />
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>

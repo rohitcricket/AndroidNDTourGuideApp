@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">TourGuide</string>
-    <string name="intro">Tap icon to search the web or text to get recommendations!</string>
+    <string name="intro">Get Recommendations: Tap Icon for Web OR Tap Text for App!</string>
     <string name="restaurants">Restaurants</string>
     <string name="hotels">Hotels</string>
     <string name="attractions">Attractions</string>
